@@ -1,4 +1,5 @@
 import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
+  // Action Creators (functions that return actions)
 
 import * as api from '../api/index.js';
 
@@ -51,3 +52,4 @@ export const deletePost = (id) => async (dispatch) => {
     console.log(error.message);
   }
 };
+  
